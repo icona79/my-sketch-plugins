@@ -1,0 +1,20 @@
+# build artefacts
+easybuttons.sketchplugin
+easybuttons.sketchplugin.zip
+
+# npm
+node_modules
+.npm
+npm-debug.log
+
+# mac
+.DS_Store
+
+# WebStorm
+.idea
+
+# Visual Studio Code
+.vscode/
+
+# sketch
+# sketch-assets

@@ -1,0 +1,29 @@
+{
+    "author": "Matteo Gratton",
+    "commands": [{
+            "script": "script.js",
+            "name": "Replace Library connected to Symbols (change current document)",
+            "handlers": {
+                "run": "onRun"
+            },
+            "identifier": "com.bohemiancoding.sketch.runscriptidentifier"
+        },
+        {
+            "script": "replace-libraries-id.js",
+            "name": "Replace Libraries' IDs (change libraries)",
+            "handlers": {
+                "run": "onRun"
+            },
+            "identifier": "replace-libraries-id"
+        }
+    ],
+    "menu": {
+        "title": "Replace Library",
+        "items": ["com.bohemiancoding.sketch.runscriptidentifier", "replace-libraries-id"]
+    },
+    "identifier": "com.example.sketch.2e5d16dc-7d85-4660-9a55-ca1ca33c11fb",
+    "version": "1.0",
+    "description": "Automatically search for symbols lacking of their Library source and reconnect them",
+    "authorEmail": "icona79@gmail.com",
+    "name": "Replace Library"
+}

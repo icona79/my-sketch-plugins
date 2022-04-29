@@ -1,0 +1,748 @@
+{
+	"bundleVersion": 1,
+	"version": "2.9.9.2",
+	"icon": "icon.png",
+	"identifier": "co.free-flow.sketch",
+	"description": "Speed up common tasks and boost your productivity.",
+	"homepage": "http://free-flow.co/",
+	"author": "Francesco Bertocci",
+	"authorEmail": "francesco@freeandwilling.com",
+	"compatibleVersion": 55,
+	"commands": [{
+			"name": "Copy Selected Elements (Set as Reference)",
+			"identifier": "Set-Selection",
+			"script": "set-selection.js",
+			"shortcut": "option shift cmd c"
+		},
+		{
+			"name": "Set Selected Artboard as Cheatseet",
+			"identifier": "Set-Cheatseet",
+			"script": "set-cheatsheet.js",
+			"shortcut": "option ctrl shift cmd c"
+		},
+		{
+			"name": "Zoom to previously Set Selection",
+			"identifier": "Zoom-To-Selection",
+			"script": "zoom-to-selection.js",
+			"shortcut": "option ctrl shift cmd ["
+		},
+		{
+			"name": "Size Selection to Parent Width",
+			"identifier": "Size-To-Width",
+			"script": "size-to-width.js",
+			"shortcut": "option ctrl shift cmd -"
+		},
+		{
+			"name": "Size Selection to Parent Width & Pin to Top Edge",
+			"identifier": "Size-To-Width-Top",
+			"script": "size-to-width-top.js",
+			"shortcut": "option ctrl shift cmd ↑"
+		},
+		{
+			"name": "Size Selection to Parent Width & Pin to Bottom Edge",
+			"identifier": "Size-To-Width-Bottom",
+			"script": "size-to-width-bottom.js",
+			"shortcut": "option ctrl shift cmd ↓"
+		},
+		{
+			"name": "Size Selection to Parent Height",
+			"identifier": "Size-To-Height",
+			"script": "size-to-height.js",
+			"shortcut": "option ctrl shift cmd '"
+		},
+		{
+			"name": "Size Selection to Parent Size",
+			"identifier": "Size-To-Parent",
+			"script": "size-to-parent.js",
+			"shortcut": "option ctrl shift cmd p"
+		},
+		{
+			"name": "Center Selection within Parent",
+			"identifier": "Center-Within-Parent",
+			"script": "center-within-parent.js",
+			"shortcut": "option ctrl shift p"
+		},
+		{
+			"name": "Center Contents within Parent",
+			"identifier": "Center-Contents",
+			"script": "center-contents.js",
+			"shortcut": "option ctrl shift c"
+		},
+		{
+			"name": "Flip Selection's Position & Pinning within Parent (RTL & LTR)",
+			"identifier": "Flip-Within-Parent",
+			"script": "flip-within-parent.js",
+			"shortcut": "option ctrl shift f"
+		},
+		{
+			"name": "Size Selection to Width Amount (Columns or Percentage)",
+			"identifier": "Size-To-Width-Amount",
+			"script": "size-to-width-amount.js",
+			"shortcut": "option shift cmd w"
+		},
+		{
+			"name": "Duplicate Selected Artboard or Layer Right",
+			"identifier": "Duplicate-Right",
+			"script": "duplicate-right.js",
+			"shortcut": "ctrl shift →"
+		},
+		{
+			"name": "Duplicate Selected Artboard or Layer Up",
+			"identifier": "Duplicate-Up",
+			"script": "duplicate-up.js",
+			"shortcut": "ctrl shift ↑"
+		},
+		{
+			"name": "Duplicate Selected Artboard or Layer Left",
+			"identifier": "Duplicate-Left",
+			"script": "duplicate-left.js",
+			"shortcut": "ctrl shift ←"
+		},
+		{
+			"name": "Duplicate Selected Artboard or Layer Down",
+			"identifier": "Duplicate-Down",
+			"script": "duplicate-down.js",
+			"shortcut": "ctrl shift ↓"
+		},
+		{
+			"name": "Batch Create Symbols from Selected Elements",
+			"identifier": "Create-Symbols",
+			"script": "create-symbols.js",
+			"shortcut": "ctrl shift c"
+		},
+		{
+			"name": "Batch Create Groups from Selected Elements",
+			"identifier": "Create-Groups",
+			"script": "create-groups.js",
+			"shortcut": "ctrl shift g"
+		},
+		{
+			"name": "Batch Create Text & Layer Styles from Selected Elements",
+			"identifier": "Create-Styles",
+			"script": "create-styles.js"
+		},
+		{
+			"name": "Batch Create Document Colors/Vars from Selected Elements",
+			"identifier": "Create-Colors",
+			"script": "create-colors.js"
+		},
+		{
+			"name": "Batch Create Document Colors/Vars from Layer Styles",
+			"identifier": "Create-Colors-From-Styles",
+			"script": "create-colors-from-styles.js"
+		},
+		{
+			"name": "Batch Create States",
+			"identifier": "Create-States",
+			"script": "create-states.js"
+		},
+		{
+			"name": "Batch Create Typography Scale",
+			"identifier": "Create-Typography-Scale",
+			"script": "create-typography-scale.js"
+		},
+		{
+			"name": "Batch Create Color Scale",
+			"identifier": "Create-Color-Scale",
+			"script": "create-color-scale.js"
+		},
+		{
+			"name": "Rename Layers and Artboards",
+			"identifier": "Rename-Layers",
+			"script": "rename.js",
+			"shortcut": "option shift cmd r"
+		},
+		{
+			"name": "Rename Text & Layers Styles (Beta)",
+			"identifier": "Rename-Styles",
+			"script": "rename-styles.js"
+		},
+		{
+			"name": "Clear Document Colors",
+			"identifier": "Clear-Colors",
+			"script": "clear-colors.js"
+		},
+		{
+			"name": "Reset Overrides for Selected Instances or Layers",
+			"identifier": "Clear-Overrides",
+			"script": "clear-overrides.js"
+		},
+		{
+			"name": "Toggle Prototyping Starting Point",
+			"identifier": "Toggle-Starting-Point",
+			"script": "toggle-starting-point.js"
+		},
+		{
+			"name": "Add Prototyping Starting Point",
+			"identifier": "Add-Starting-Point",
+			"script": "add-starting-point.js"
+		},
+		{
+			"name": "Remove Prototyping Starting Point",
+			"identifier": "Remove-Starting-Point",
+			"script": "remove-starting-point.js"
+		},
+		{
+			"name": "Clear Document Text Styles",
+			"identifier": "Clear-Text-Styles",
+			"script": "clear-text-styles.js"
+		},
+		{
+			"name": "Clear Document Layer Styles",
+			"identifier": "Clear-Layer-Styles",
+			"script": "clear-layer-styles.js"
+		},
+		{
+			"name": "Export Selected Layers to HTML Slideshow (Beta)",
+			"identifier": "Export-Slideshow",
+			"script": "export-slideshow.js"
+		},
+		{
+			"name": "Export Selected Layers to a New Page (flattened)",
+			"identifier": "Export-Selection-To-Page",
+			"script": "export-selection-to-page-flat.js"
+		},
+		{
+			"name": "Create Style Guide (Beta)",
+			"identifier": "Export-Style-Guide",
+			"script": "export-style-guide.js"
+		},
+		{
+			"name": "Create Components Pages",
+			"identifier": "Create-Components-Pages",
+			"script": "create-components-pages.js"
+		},
+		{
+			"name": "Go to URL...",
+			"identifier": "Go-To",
+			"script": "go-to.js",
+			"shortcut": "ctrl shift g"
+		},
+		{
+			"name": "Start Chat...",
+			"identifier": "Start-Chat",
+			"script": "start-chat.js"
+		},
+		{
+			"name": "Populate Selected Instance with CSV data (Beta)",
+			"identifier": "Data-Populate-From-CSV",
+			"script": "data-populate-from-csv.js"
+		},
+		{
+			"name": "Populate Selected Instance with data from Reference Data Element (Beta)",
+			"identifier": "Data-Populate-From-Instances",
+			"script": "data-populate-from-instances.js"
+		},
+		{
+			"name": "Sort Selected Instances Alphabetically by Override Values",
+			"identifier": "Sort-Instances-By-Value",
+			"script": "sort-by-value.js"
+		},
+		{
+			"name": "Filter Selected Instances by Matching Override Values",
+			"identifier": "Filter-Instances-By-Value",
+			"script": "filter-by-value.js"
+		},
+		{
+			"name": "Sort Selected Layers, Groups and Artboards by Name",
+			"identifier": "Sort-Layers-By-Name",
+			"script": "sort-by-value.js"
+		},
+		{
+			"name": "Sort Selected Text Layers by Text Values",
+			"identifier": "Sort-Text-Layers-By-Value",
+			"script": "sort-by-value.js"
+		},
+		{
+			"name": "Invert Order in Layer List for Selected Elements",
+			"identifier": "Invert-Index",
+			"script": "invert-index.js"
+		},
+		{
+			"name": "Swap Size, Position and Order in Layer List for 2 Selected Elements",
+			"identifier": "Swap-Position-Size-Order",
+			"script": "swap-position-size-order.js"
+		},
+		{
+			"name": "Export Selected Artboards as an SVG Animation (Beta)",
+			"identifier": "Export-SVG-Animation",
+			"script": "export-svg-animation.js"
+		},
+		{
+			"name": "Paste Copy of Reference Element",
+			"identifier": "Paste-Selection",
+			"script": "paste-selection-smart.js",
+			"shortcut": "ctrl option shift cmd v"
+		},
+		{
+			"name": "Replace Selection with Copy of Reference Element",
+			"identifier": "Replace-Selection",
+			"script": "replace-selection-with-source.js",
+			"shortcut": "ctrl option shift cmd b"
+		},
+		{
+			"name": "Rename Selection with simplified Symbol Name, Layer Style or Text Value",
+			"identifier": "Rename-With-Simple-Name",
+			"script": "rename-with-simple-name.js",
+			"shortcut": "ctrl option shift cmd r"
+		},
+		{
+			"name": "Rename Selection with full Symbol Name, Layer Style or Text Value",
+			"identifier": "Rename-With-Name",
+			"script": "rename-with-name.js"
+		},
+		{
+			"name": "Export Selected Slice, Group or Artboard to a new Page (flat)",
+			"identifier": "New-Page-Insert-Image-Fill-From-Source-Layer",
+			"script": "new-page-insert-image-fill-from-source-layer.js"
+		},
+		{
+			"name": "Insert Image Fill (from Source)",
+			"identifier": "Insert-Image-Fill-From-Source-Layer",
+			"script": "insert-image-fill-from-source-layer.js",
+			"shortcut": "ctrl option shift cmd f"
+		},
+		{
+			"name": "Replace Selection with Next Local Symbol, Text or Layer Style (Alpha)",
+			"identifier": "Replace-With-Next",
+			"script": "replace-with-next.js",
+			"shortcut": "option shift cmd ↓"
+		},
+		{
+			"name": "Replace Selection with Previous Local Symbol, Text or Layer Style (Alpha)",
+			"identifier": "Replace-With-Previous",
+			"script": "replace-with-previous.js",
+			"shortcut": "option shift cmd ↑"
+		},
+		{
+			"name": "Paste in Place Instance of Reference Symbol",
+			"identifier": "Insert-Selection",
+			"script": "paste-selection.js",
+			"shortcut": "option shift cmd b"
+		},
+		{
+			"name": "Insert Instance 1",
+			"identifier": "Insert-Selection-Quick-1",
+			"script": "paste-quick-1.js",
+			"shortcut": "option ctrl 1"
+		},
+		{
+			"name": "Insert Instance 2",
+			"identifier": "Insert-Selection-Quick-2",
+			"script": "paste-quick-2.js",
+			"shortcut": "option ctrl 2"
+		},
+		{
+			"name": "Insert Instance 3",
+			"identifier": "Insert-Selection-Quick-3",
+			"script": "paste-quick-3.js",
+			"shortcut": "option ctrl 3"
+		},
+		{
+			"name": "Insert Instance 4",
+			"identifier": "Insert-Selection-Quick-4",
+			"script": "paste-quick-4.js",
+			"shortcut": "option ctrl 4"
+		},
+		{
+			"name": "Insert Instance 5",
+			"identifier": "Insert-Selection-Quick-5",
+			"script": "paste-quick-5.js",
+			"shortcut": "option ctrl 5"
+		},
+		{
+			"name": "Select Similar Elements to Reference",
+			"identifier": "Select-Similar-Elements",
+			"script": "select-similar-elements.js",
+			"shortcut": "option shift cmd a"
+		},
+		{
+			"name": "Select Similar Elements to Selection",
+			"identifier": "Select-Similar-Elements-Selection",
+			"script": "select-similar-elements-selection.js",
+			"shortcut": "ctrl option shift cmd a"
+		},
+		{
+			"name": "Select Children Elements to Selection",
+			"identifier": "Select-Children",
+			"script": "select-children.js"
+		},
+		{
+			"name": "Select Similar Elements to Selection within Same Artboard",
+			"identifier": "Select-Similar-Elements-Selection-Artboard",
+			"script": "select-similar-elements-within-artboard.js",
+			"shortcut": "ctrl shift a"
+		},
+		{
+			"name": "Paste Size (Width & Height)",
+			"identifier": "Sync-Stored-Size",
+			"script": "sync-stored-size.js",
+			"shortcut": "option shift cmd ]"
+		},
+		{
+			"name": "Paste Width",
+			"identifier": "Sync-Stored-W",
+			"script": "sync-stored-w.js",
+			"shortcut": "ctrl option shift cmd w"
+		},
+		{
+			"name": "Paste Height",
+			"identifier": "Sync-Stored-H",
+			"script": "sync-stored-H.js",
+			"shortcut": "ctrl option shift cmd h"
+		},
+		{
+			"name": "Paste Position (X & Y)",
+			"identifier": "Sync-Stored-Position",
+			"script": "sync-stored-position.js",
+			"shortcut": "option shift cmd ["
+		},
+		{
+			"name": "Paste X Position",
+			"identifier": "Sync-Stored-X",
+			"script": "sync-stored-x.js",
+			"shortcut": "option control cmd x"
+		},
+		{
+			"name": "Paste X Position from Right Egde of Parent",
+			"identifier": "Sync-Stored-X-Right",
+			"script": "sync-stored-x-right.js",
+			"shortcut": "option control shift cmd x"
+		},
+		{
+			"name": "Paste Y Position",
+			"identifier": "Sync-Stored-Y",
+			"script": "sync-stored-y.js",
+			"shortcut": "option control cmd y"
+		},
+		{
+			"name": "Paste Y Position from Bottom Egde of Parent",
+			"identifier": "Sync-Stored-Y-Bottom",
+			"script": "sync-stored-y-bottom.js",
+			"shortcut": "option shift cmd control y"
+		},
+		{
+			"name": "Paste Index (Order in Layer List)",
+			"identifier": "Sync-Stored-Index",
+			"script": "sync-stored-index.js",
+			"shortcut": "option shift cmd i"
+		},
+		{
+			"name": "Paste Name (Rename with Source Name)",
+			"identifier": "Sync-Stored-Name",
+			"script": "sync-stored-name.js",
+			"shortcut": "option shift cmd n"
+		},
+		{
+			"name": "Paste Text Values to Text Layers",
+			"identifier": "Sync-Stored-Values",
+			"script": "sync-stored-values.js",
+			"shortcut": "option shift cmd ;"
+		},
+		{
+			"name": "Paste Font Family to Text Layers (alpha)",
+			"identifier": "Sync-Stored-Font-Family",
+			"script": "sync-stored-font-family.js",
+			"shortcut": "option shift cmd p"
+		},
+		{
+			"name": "Paste Override Values (from Sources)",
+			"identifier": "Sync-Stored-Values-To-Instances",
+			"script": "sync-stored-values-from-instances.js",
+			"shortcut": "option shift cmd j"
+		},
+		{
+			"name": "Update Override Values (from Sources)",
+			"identifier": "Update-Instance-Overrides-From-Source-Overrides",
+			"script": "update-instance-overrides-from-source-overrides.js",
+			"shortcut": "option shift cmd u"
+		},
+		{
+			"name": "Update Image Fill (from Source)",
+			"identifier": "Update-Image-Fill-From-Source-Layer",
+			"script": "update-image-fill-from-source-layer.js",
+			"shortcut": "ctrl option shift cmd u"
+		},
+		{
+			"name": "Set Size of Selected Elements to their Contents",
+			"identifier": "Fit-To-Content",
+			"script": "fit-to-Content.js",
+			"shortcut": "option shift cmd ="
+		},
+		{
+			"name": "Center Vertically Selected Elements & Pin",
+			"identifier": "Center-Vertically",
+			"script": "center-vertically.js",
+			"shortcut": "ctrl shift v"
+		},
+		{
+			"name": "Center Horizontally Selected Elements & Pin",
+			"identifier": "Center-Horizontally",
+			"script": "center-horizontally.js",
+			"shortcut": "ctrl shift h"
+		},
+		{
+			"name": "Paste Opacity to Layers or Symbols",
+			"identifier": "Sync-Stored-Opacity",
+			"script": "sync-stored-opacity.js",
+			"shortcut": "option shift cmd o"
+		},
+		{
+			"name": "Paste Pinning & Resizing Properties to Layers or Symbols",
+			"identifier": "Sync-Stored-Pin-Resize",
+			"script": "sync-stored-pin-and-resize.js",
+			"shortcut": "option shift cmd p"
+		},
+		{
+			"name": "Paste Color to Text Layers, Shapes or Artboards",
+			"identifier": "Sync-Stored-Color",
+			"script": "sync-stored-color.js",
+			"shortcut": "option shift cmd 9"
+		},
+		{
+			"name": "Duplicate Selected Element to Columns, Rows or Grid",
+			"identifier": "Clone-To-Grid",
+			"script": "clone-to-grid.js",
+			"shortcut": "option shift cmd g"
+		},
+		{
+			"name": "Swap Themes",
+			"identifier": "Themes-Swap",
+			"script": "themes-swap.js"
+		},
+		{
+			"name": "Define Themes",
+			"identifier": "Themes-Define",
+			"script": "themes-define.js"
+		},
+		{
+			"name": "Set Spacing between Elements (or within Group)",
+			"identifier": "Autolayout-Set-Spacing",
+			"script": "autolayout-set-spacing.js",
+			"shortcut": "option shift cmd s"
+		},
+		{
+			"name": "Update Layout with Current Spacing",
+			"identifier": "Autolayout-With-Spacing",
+			"script": "autolayout-with-spacing.js",
+			"shortcut": "ctrl option shift cmd s"
+		},
+		{
+			"name": "Paste spacing from Reference Group",
+			"identifier": "Sync-Stored-Spacing",
+			"script": "sync-stored-spacing.js",
+			"shortcut": "ctrl option shift cmd s"
+		},
+		{
+			"name": "Want more? Try the FF Assistants",
+			"identifier": "Sketch-Assistants",
+			"script": "assistants.js"
+		},
+		{
+			"name": "View Prototypes in fullscreen on your device",
+			"identifier": "FreeView-App",
+			"script": "freeviewapp.js"
+		},
+		{
+			"name": "Need help? Go to free-flow.co",
+			"identifier": "Support",
+			"script": "support.js"
+		},
+		{
+			"name": "Want to help us? Send feedback",
+			"identifier": "Feedback",
+			"script": "feedback.js"
+		},
+		{
+			"name": "Like FreeFlow? Donate 😀",
+			"identifier": "Donate",
+			"script": "donate.js"
+		},
+		{
+			"name": "Want to help others? Tweet your love!",
+			"identifier": "Share",
+			"script": "share.js"
+		}
+	],
+	"menu": {
+		"title": "🌈 FreeFlow (FF)",
+		"items": [
+			"Set-Selection",
+			"-",
+			"Paste-Selection",
+			"Insert-Selection",
+			{
+				"title": "Quick Insert from Cheatsheet...",
+				"items": [
+					"Insert-Selection-Quick-1",
+					"Insert-Selection-Quick-2",
+					"Insert-Selection-Quick-3",
+					"Insert-Selection-Quick-4",
+					"Insert-Selection-Quick-5",
+					"Set-Cheatseet"
+				]
+			},
+			"Zoom-To-Selection",
+			"Go-To",
+			"Start-Chat",
+			"-",
+			{
+				"title": "Populate with...",
+				"items": [
+					"Sync-Stored-Values",
+					"Sync-Stored-Values-To-Instances",
+					"Update-Instance-Overrides-From-Source-Overrides",
+					"New-Page-Insert-Image-Fill-From-Source-Layer",
+					"Insert-Image-Fill-From-Source-Layer",
+					"Update-Image-Fill-From-Source-Layer",
+					"Data-Populate-From-CSV",
+					"Data-Populate-From-Instances",
+					"-",
+					"Sort-Instances-By-Value",
+					"Sort-Text-Layers-By-Value"
+				]
+			},
+			{
+				"title": "Paste individual property value...",
+				"items": [
+					"Sync-Stored-Name",
+					"Sync-Stored-Size",
+					"Sync-Stored-W",
+					"Sync-Stored-H",
+					"Sync-Stored-Position",
+					"Sync-Stored-X",
+					"Sync-Stored-X-Right",
+					"Sync-Stored-Y",
+					"Sync-Stored-Y-Bottom",
+					"Sync-Stored-Pin-Resize",
+					"Sync-Stored-Spacing",
+					"Sync-Stored-Index",
+					"Sync-Stored-Opacity",
+					"Sync-Stored-Color",
+					"Sync-Stored-Font-Family"
+				]
+			},
+
+			{
+				"title": "Set Position, Size & Pin...",
+				"items": [
+					"Size-To-Parent",
+					"Size-To-Width-Amount",
+					"Size-To-Width",
+					"Size-To-Width-Top",
+					"Size-To-Width-Bottom",
+					"Size-To-Height",
+					"Center-Within-Parent",
+					"Center-Contents",
+					"Center-Horizontally",
+					"Center-Vertically",
+					"Flip-Within-Parent",
+					"Swap-Position-Size-Order",
+					"Invert-Index",
+					"Fit-To-Content",
+					"Sort-Layers-By-Name"
+				]
+			},
+			{
+				"title": "Duplicate...",
+				"items": [
+					"Duplicate-Right",
+					"Duplicate-Down",
+					"Duplicate-Left",
+					"Duplicate-Up",
+					"Clone-To-Grid"
+				]
+			},
+			{
+				"title": "Set Spacing...",
+				"items": [
+					"Autolayout-Set-Spacing",
+					"Autolayout-With-Spacing"
+				]
+			},
+			{
+				"title": "Swap Themes...",
+				"items": [
+					"Themes-Swap",
+					"Themes-Define"
+				]
+			},
+			{
+				"title": "Replace Selection with...",
+				"items": [
+					"Replace-Selection",
+					"Replace-With-Next",
+					"Replace-With-Previous"
+				]
+			},
+			"-",
+			{
+				"title": "Select Similar...",
+				"items": [
+					"Select-Similar-Elements",
+					"Select-Similar-Elements-Selection",
+					"Select-Similar-Elements-Selection-Artboard",
+					"Select-Children"
+				]
+			},
+			{
+				"title": "Batch Create Components & More...",
+				"items": [
+					"Create-Symbols",
+					"Create-Groups",
+					"Create-Styles",
+					"Create-Colors",
+					"Create-Colors-From-Styles",
+					"Create-States",
+					"Create-Typography-Scale",
+					"Create-Color-Scale",
+					"Add-Starting-Point",
+					"-",
+					"Export-Style-Guide",
+					"Create-Components-Pages"
+				]
+			},
+			{
+				"title": "Clean Up Layer Names, Colors & Styles...",
+				"items": [
+					"Rename-Layers",
+					"Rename-Styles",
+					"Rename-With-Simple-Name",
+					"Rename-With-Name",
+          "-",
+					"Clear-Colors",
+					"Clear-Overrides",
+					"Toggle-Starting-Point",
+					"Add-Starting-Point",
+					"Remove-Starting-Point",
+					"Clear-Text-Styles",
+					"Clear-Layer-Styles",
+				]
+			},
+			{
+				"title": "Export...",
+				"items": [
+					"Export-Slideshow",
+					"Export-SVG-Animation",
+					"Export-Selection-To-Page"
+				]
+			},
+			"-",
+			{
+				"title": "Share the ❤️ & More...",
+				"items": [
+					"Sketch-Assistants",
+					"FreeView-App",
+					"Support",
+					"Feedback",
+					"Share",
+					"Donate"
+				]
+			}
+		]
+	},
+	"name": "🌈 FreeFlow",
+	"copyright": "Copyright © 2020 Francesco Bertocci, LLC. All rights reserved.",
+	"disableCocoaScriptPreprocessor": true,
+	"appcast": "https://fbmore.github.io/FreeFlow-Sketch-Plugin/appcast.xml"
+}

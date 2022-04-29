@@ -1,0 +1,24 @@
+{
+  "author" : "",
+  "commands" : [
+    {
+      "script" : "script.js",
+      "name" : "FF Import and Update Color Vars from CSS",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.bohemiancoding.sketch.runscriptidentifier"
+    }
+  ],
+  "menu" : {
+    "title" : "FF Import and Update Color Vars from CSS",
+    "items" : [
+      "com.bohemiancoding.sketch.runscriptidentifier"
+    ]
+  },
+  "identifier" : "com.example.sketch.cc9251e0-a4bf-45ab-9e2d-92072749909b",
+  "version" : "1.0",
+  "description" : "",
+  "authorEmail" : "",
+  "name" : "FF Import and Update Color Vars from CSS"
+}
