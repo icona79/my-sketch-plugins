@@ -1,0 +1,23 @@
+{
+    "name": "Sketch - Colors in use",
+    "description": "Save in clipboard all the colors in use in any layer and text layer",
+    "version": "1.0",
+    "author": "Matteo Gratton",
+    "authorEmail": "icona79@gmail.com",
+    "homepage": "",
+    "commands": [{
+        "script": "script.js",
+        "name": "🎨 Sketch - Colors in use",
+        "handlers": {
+            "run": "onRun"
+        },
+        "identifier": "com.bohemiancoding.sketch.runscriptidentifier"
+    }],
+    "menu": {
+        "title": "Sketch - Colors in use",
+        "items": ["com.bohemiancoding.sketch.runscriptidentifier"],
+        "isRoot": true
+    },
+    "identifier": "com.example.sketch.6931c2f1-73b3-4766-ac44-41ef1499a804",
+    "icon": "icon.png"
+}

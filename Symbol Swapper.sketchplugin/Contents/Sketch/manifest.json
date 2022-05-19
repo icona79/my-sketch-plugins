@@ -1,0 +1,65 @@
+{
+	"name" : "Symbol Swapper",
+	"description" : "Swap the selected symbols and/or symbol instances to another master, or swap entire libraries.",
+	"author" : "Jason Burns",
+	"homepage" : "https://github.com/sonburn/symbol-swapper",
+	"version" : "0.25",
+	"identifier" : "com.sonburn.sketchplugins.symbol-swapper",
+	"appcast" : "https://raw.githubusercontent.com/sonburn/symbol-swapper/master/appcast.xml",
+	"icon" : "icon.png",
+	"commands" : [
+		{
+			"name" : "Symbol Swap Selections",
+			"shortcut" : "cmd option shift w",
+			"identifier" : "swapSelected",
+			"description" : "Swap the selected symbols and/or symbol instances to another master.",
+			"icon" : "icon.png",
+			"script" : "script.js",
+			"handler" : "swapSelected"
+		},
+		{
+			"name" : "Symbol Swap Libraries",
+			"shortcut" : "cmd option shift b",
+			"identifier" : "swapLibrary",
+			"description" : "Swap all symbols from one library to another.",
+			"icon" : "icon.png",
+			"script" : "script.js",
+			"handler" : "swapLibrary"
+		},
+		{
+			"name" : "Report Issue",
+			"identifier" : "report",
+			"description" : "Report an issue with Symbol Swapper.",
+			"icon" : "icon.png",
+			"script" : "script.js",
+			"handler" : "report"
+		},
+		{
+			"name" : "Other Plugins",
+			"identifier" : "plugins",
+			"description" : "View all of Sonburn's plugins.",
+			"icon" : "icon.png",
+			"script" : "script.js",
+			"handler" : "plugins"
+		},
+		{
+			"name" : "Donate",
+			"identifier" : "donate",
+			"description" : "Donate to the development of Symbol Swapper.",
+			"icon" : "icon.png",
+			"script" : "script.js",
+			"handler" : "donate"
+		}
+	],
+	"menu" : {
+		"title" : "Symbol Swapper",
+		"items" : [
+			"swapSelected",
+			"swapLibrary",
+			"-",
+			"report",
+			"plugins",
+			"donate"
+		]
+	}
+}

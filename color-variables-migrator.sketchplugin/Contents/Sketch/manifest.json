@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Color Variables Migrator",
+      "identifier": "color-variables-migrator.migrate",
+      "handler": "migrate",
+      "script": "__my-command.js"
+    }
+  ],
+  "menu": {
+    "title": "Color Variables Migrator",
+    "isRoot": true,
+    "items": [
+      "color-variables-migrator.migrate"
+    ]
+  },
+  "version": "1.0.0",
+  "description": "Migrate your Layers and Styles to use Color Variables",
+  "name": "Color Variables Migrator",
+  "identifier": "Color Variables Migrator",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com/sketch-hq/color-variables-migrator/master/.appcast.xml",
+  "author": "Sketch",
+  "authorEmail": "developer@sketch.com"
+}
